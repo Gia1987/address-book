@@ -1,10 +1,11 @@
-import { applyMiddleware, combineReducers, compose, createStore } from "redux";
+/* eslint-disable import/no-anonymous-default-export */
+import { applyMiddleware, combineReducers, createStore } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import createSagaMiddleware, { SagaMiddleware } from "redux-saga";
 
 export const reducers = combineReducers({});
 
-const sagas = {};
+const sagas: any = {};
 
 export default function () {
   const sagaMiddleware: SagaMiddleware = createSagaMiddleware();
